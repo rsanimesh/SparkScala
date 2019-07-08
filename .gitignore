@@ -2,3 +2,9 @@
 *.log
 .metadata/*
 /.metadata/
+SparkScalaCourse/.cache-main
+/.bin/
+SparkScalaCourse/.classpath
+SparkScalaCourse/.project
+SparkScalaCourse/.settings/org.eclipse.jdt.core.prefs
+SparkScalaCourse/.settings/org.scala-ide.sdt.core.prefs
