@@ -6,5 +6,6 @@ SparkScalaCourse/.cache-main
 /.bin/
 *.classpath
 *.project
-*.prefs
 
+*/.settings/*
+*/.worksheet/*
