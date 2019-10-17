@@ -1,22 +1,22 @@
 object LearningScala1 {
   // VALUES are immutable constants. You can't change them once defined.
-  val hello: String = "Hello!"                    //> hello  : String = Hello!
-  println(hello)                                  //> Hello!
+  val hello: String = "Namaste! "                 //> hello  : String = "Namaste! "
+  println(hello)                                  //> Namaste! 
   
   // Notice how Scala defines things backwards from other languages - you declare the
   // name, then the type.
   
   // VARIABLES are mutable
-  var helloThere: String = hello                  //> helloThere  : String = Hello!
+  var helloThere: String = hello                  //> helloThere  : String = "Namaste! "
   helloThere = hello + " There!"
-  println(helloThere)                             //> Hello! There!
+  println(helloThere)                             //> Namaste!  There!
   
   
   // One key objective of functional programming is to use immutable objects as often as possible.
   // Try to use operations that transform immutable objects into a new immutable object.
   // For example, we could have done the same thing like this:
-  val immutableHelloThere = hello + "There!"      //> immutableHelloThere  : String = Hello!There!
-  println(immutableHelloThere)                    //> Hello!There!
+  val immutableHelloThere = hello + "There!"      //> immutableHelloThere  : String = Namaste! There!
+  println(immutableHelloThere)                    //> Namaste! There!
   
   // Some other types
   val numberOne : Int = 1                         //> numberOne  : Int = 1
@@ -68,5 +68,10 @@ object LearningScala1 {
   // Write some code that takes the value of pi, doubles it, and then prints it within a string with
   // three decimal places of precision to the right.
   // Just write your code below here; any time you save the file it will automatically display the results!
+  
+  val pi_value: Double = 3.14745                  //> pi_value  : Double = 3.14745
+  val pi_double = pi_value*2                      //> pi_double  : Double = 6.2949
+  println(f"$pi_double%.3f")                      //> 6.295
+  
   
 }
